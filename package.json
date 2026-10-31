@@ -1,0 +1,12 @@
+{
+  "name": "nirup-madadgaar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NIRUP MADADGAAR static homepage and community demo",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
