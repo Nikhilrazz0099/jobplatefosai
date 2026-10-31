@@ -1,100 +1,120 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e8">
-  <meta name="description" content="Find genuine work, meet people who know the way, and feel at home in Bengaluru. NIRUP MADADGAAR — a new beginning, together.">
-  <title>NIRUP MADADGAAR — नौकरी से नई शुरुआत तक।</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07152d">
+  <meta name="description" content="Find your job. Find your place. Connect with workers, discover real work stories and explore jobs with NIRUP MADADGAAR.">
+  <title>NIRUP MADADGAAR — Find Your Job. Find Your Place.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="assets/nirup-favicon.svg">
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="NIRUP MADADGAAR home"><img class="brand-mark brand-mark-image" src="assets/nirup-nr-mark-small.png" alt=""><span class="brand-type"><strong>NIRUP MADADGAAR</strong><small lang="hi">निरुप मददगार</small></span></a>
-    <nav class="desktop-nav" aria-label="Main navigation"><a href="#jobs">Jobs</a><a href="#stories">Work Stories</a><a href="#network">People</a><a href="#stays">PG &amp; Stay</a><a href="#resources">Resources</a></nav>
-    <div class="header-actions"><button class="text-button login-trigger" type="button">Login</button><button class="button button-small button-dark signup-trigger" type="button">Join Now <span>↗</span></button></div>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" type="button"><span></span><span></span></button>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="NIRUP MADADGAAR home">
+      <img src="assets/nirup-nr-mark-small.png" alt="" width="38" height="34">
+      <span><strong>NIRUP <b>MADADGAAR</b></strong><small>Find Your Job. Find Your Place.</small></span>
+    </a>
+    <form class="top-search" id="quick-search" role="search">
+      <label class="sr-only" for="quick-category">Search job titles or skills</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.2 4.2"/></svg>
+      <input id="quick-category" type="search" placeholder="Search jobs, skills, companies…" autocomplete="off">
+      <input id="quick-city" type="hidden" value="Bengaluru, Karnataka">
+      <button type="submit" aria-label="Search">Search</button>
+    </form>
+    <div class="top-actions"><button class="icon-button notification-button" aria-label="Notifications" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button><button class="login-trigger text-button" type="button">Log in</button><button class="button button-blue signup-trigger" type="button">Join the community <span>↗</span></button></div>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
   </header>
-  <main id="top">
-    <section class="hero section-wrap">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> NIRUP MADADGAAR <span class="eyebrow-city">BENGALURU · INDIA</span></div>
-        <h1 lang="hi">काम की तलाश<br>से आगे, <span>एक नई<br>शुरुआत तक!</span></h1>
-        <p class="hero-lede" lang="hi">नौकरी खोजें, लोगों से जुड़ें, भरोसेमंद जानकारी पाएं<br>और नए शहर में अपना ठिकाना पाएं।</p>
-        <div class="hero-local"><span class="hindi" lang="hi">नौकरी से नई शुरुआत तक।</span><span class="local-divider"></span><span>Same people. Real stories. A better tomorrow.</span></div>
-        <div class="hero-ctas"><a class="button button-light" href="#jobs">Explore jobs <span>↗</span></a><a class="button button-ghost" href="#stories">Watch our stories <span>▶</span></a></div>
-        <div class="hero-proof"><div class="avatar-stack"><span>R</span><span>A</span><span>S</span><span>+</span></div><p><b>Join 5,000+ people</b><br>building their journey</p></div>
-      </div>
-      <div class="hero-art reveal" data-tilt>
-        <figure class="hero-photo-wrap"><img class="hero-photo" src="assets/hero-bengaluru-technician.jpg" alt="A technician beginning her workday in a sunlit Bengaluru workshop">
-          <span class="hero-photo-shade"></span><figcaption class="photo-location"><span>⌖</span> BENGALURU, INDIA <i>12°58' N · 77°35' E</i></figcaption>
-          <div class="hero-photo-story"><span class="photo-story-index">A GOOD PLACE TO BEGIN · 01</span><b>There’s a place<br>for what you do.</b><span class="photo-story-line"></span></div>
-        </figure>
-        <a class="hero-float-card float-job" href="#jobs"><span class="float-thumb"></span><span><small>JOB OPPORTUNITIES</small><b>Find your next role</b></span><span class="float-arrow">↗</span></a>
-        <a class="hero-float-card float-stay" href="#stays"><span class="float-mark">⌂</span><span><small>PG &amp; STAY</small><b>A place to land</b></span><span class="float-arrow">↗</span></a>
-        <a class="hero-float-card float-story" href="#stories"><span class="float-mark">▶</span><span><small>WORK STORIES</small><b>Real people, real work</b></span></a>
-      </div>
-      <div class="hero-footnote"><span>10K+ <small>ACTIVE JOBS</small></span><span>5K+ <small>WORKERS &amp; PROFESSIONALS</small></span><span>2K+ <small>PG &amp; STAY LISTINGS</small></span><span>95% <small>POSITIVE STORIES</small></span></div>
-    </section>
-    <section class="quick-search section-wrap reveal" id="how">
-      <div class="search-intro"><span class="eyebrow-dark">YOUR NEXT STEP STARTS HERE</span><h2>Find work that<br><i>fits your life.</i></h2></div>
-      <form class="search-form" id="quick-search">
-        <label><span>I'm looking for</span><select id="quick-category"><option value="">Any kind of work</option><option>Operations</option><option>Customer support</option><option>Skilled trades</option><option>Hospitality</option><option>Delivery &amp; logistics</option></select></label>
-        <label><span>Near</span><select id="quick-city"><option>Bengaluru, Karnataka</option><option>Whitefield</option><option>Electronic City</option><option>Indiranagar</option><option>Koramangala</option></select></label>
-        <button class="button button-teal" type="submit">Find my fit <span>↗</span></button>
-      </form>
-      <div class="search-categories" aria-label="Popular job categories"><a href="#jobs" data-quick-category="Skilled trades">Manufacturing</a><a href="#jobs" data-quick-category="Operations">Retail</a><a href="#jobs" data-quick-category="Operations">Warehouse</a><a href="#jobs" data-quick-category="Customer support">Office</a><a href="#jobs" data-quick-category="Delivery &amp; logistics">Delivery</a><button type="button" id="more-categories">More⌄</button></div>
-      <div class="search-foot"><span>GOOD WORK. REAL PEOPLE. A PLACE TO LAND.</span><span>BUILT AROUND YOU <b>✳</b></span></div>
-    </section>
-    <section class="feature-strip section-wrap" id="resources"><div class="feature-intro"><span class="eyebrow-dark">EVERYTHING YOU NEED</span><h2>One place.<br><i>Fresh starts.</i></h2><p>Jobs, people, places and support for the whole journey.</p></div><a class="feature-card" href="#jobs"><span class="feature-icon">▣</span><b>Find Jobs</b><small>Verified opportunities across industries</small><span class="feature-arrow">→</span></a><a class="feature-card" href="#stories"><span class="feature-icon">▶</span><b>Work Stories</b><small>Real experiences from real people</small><span class="feature-arrow">→</span></a><a class="feature-card" href="#network"><span class="feature-icon">♧</span><b>Connect with People</b><small>Network and get referrals</small><span class="feature-arrow">→</span></a><a class="feature-card" href="#stays"><span class="feature-icon">⌂</span><b>PG &amp; Stay</b><small>Safe and affordable accommodation</small><span class="feature-arrow">→</span></a><a class="feature-card resource-card" href="#footer"><span class="feature-icon">◧</span><b>Career Resources</b><small>Tips, guides and growth opportunities</small><span class="feature-arrow">→</span></a></section>
-    <section class="jobs-section section-wrap section-pad" id="jobs">
-      <div class="section-heading reveal"><div><span class="eyebrow-dark">OPPORTUNITY, WITH A HUMAN SIDE</span><h2>Find work that <i>works for you.</i></h2></div><a class="arrow-link" href="#job-list" id="all-jobs-link">See all opportunities <span>↗</span></a></div>
-      <div class="filter-row reveal"><div class="filter-pills" role="group" aria-label="Filter jobs by education"><button class="filter-pill active" data-education="All" type="button">All levels</button><button class="filter-pill" data-education="10th" type="button">10th pass</button><button class="filter-pill" data-education="12th" type="button">12th pass</button><button class="filter-pill" data-education="ITI" type="button">ITI</button><button class="filter-pill" data-education="Diploma" type="button">Diploma</button><button class="filter-pill" data-education="Graduate" type="button">Graduate</button></div><button class="filter-more" id="filter-toggle" type="button">＋ More filters</button></div>
-      <div class="filter-panel" id="filter-panel" hidden><label>Skills or keywords<input id="skill-filter" type="search" placeholder="e.g. communication, safety"></label><label>City<select id="city-filter"><option value="">Any Bengaluru area</option><option>Whitefield</option><option>Electronic City</option><option>Indiranagar</option><option>Koramangala</option><option>Peenya</option><option>HSR Layout</option><option>Jayanagar</option><option>Malleshwaram</option></select></label><label>Experience<select id="experience-filter"><option value="">Any experience</option><option>Fresher</option><option>1–3 years</option><option>3+ years</option></select></label><label>Salary per month<select id="salary-filter"><option value="">Any salary</option><option>₹15k+</option><option>₹20k+</option><option>₹30k+</option></select></label><label>Category<select id="category-filter"><option value="">Any category</option><option>Operations</option><option>Customer support</option><option>Skilled trades</option><option>Hospitality</option><option>Delivery &amp; logistics</option></select></label></div>
-      <div class="job-list" id="job-list"></div><div class="jobs-bottom"><span>THOUGHTFULLY FOUND. NEVER JUST A NUMBER.</span><button id="show-more-jobs" class="underlined-button" type="button">Show more roles <span>↓</span></button></div>
-    </section>
-    <section class="stories-section section-wrap section-pad" id="stories">
-      <div class="section-heading reveal"><div><span class="eyebrow-light">REAL PEOPLE. REAL WORK.</span><h2>Work Stories</h2><p class="section-lede light-lede">See the real work environment, roles and experiences before you apply.</p></div><a class="arrow-link arrow-link-light" href="#story-cards">View all <span>↗</span></a></div>
-      <div class="story-rail" id="story-cards"></div><div class="story-caption"><span>15–60 SECOND FIELD NOTES FROM YOUR CITY</span><span>EVERY ROLE HAS A STORY <b>✳</b></span></div>
-    </section>
-    <section class="network-section section-wrap" id="network">
-      <div class="network-visual reveal" data-tilt><div class="network-grid"></div><div class="network-label">YOUR CIRCLE<br>IS CLOSER THAN<br>YOU THINK.</div>
-        <div class="network-node node-center"><span>NM</span></div><div class="network-node node-one"><span>RK</span></div><div class="network-node node-two"><span>AP</span></div><div class="network-node node-three"><span>SK</span></div><div class="network-node node-four"><span>+</span></div>
-        <svg class="network-lines" viewBox="0 0 500 420" fill="none" aria-hidden="true"><path d="M245 218L126 115M245 218L384 111M245 218L129 333M245 218L386 331M126 115L384 111M129 333L386 331" stroke="#5d9c91" stroke-opacity=".55" stroke-width="1.2"/><circle cx="245" cy="218" r="90" stroke="#c6a66b" stroke-opacity=".35" stroke-dasharray="3 6"/></svg>
-        <div class="network-tag">GOOD PEOPLE<br>MAKE GOOD CITIES <span>↗</span></div>
-      </div>
-      <div class="network-copy reveal"><span class="eyebrow-dark">GROW TOGETHER</span><h2>Find your<br><i>people.</i></h2><p>Starting somewhere new is easier when someone’s been there. Meet local workers, ask what the job is really like, or find a friendly face in your field.</p>
-        <div class="network-benefits"><div><span>01</span><p><b>Meet people doing the work</b><small>Honest advice from people in your field.</small></p></div><div><span>02</span><p><b>Get a warm introduction</b><small>Ask for a referral. Pass one along.</small></p></div><div><span>03</span><p><b>Feel at home, sooner</b><small>Build your circle in a new city.</small></p></div></div><button class="button button-dark" id="meet-people" type="button">Meet your community <span>↗</span></button>
-      </div>
-    </section>
-    <section class="stay-section section-wrap section-pad" id="stays">
-      <div class="section-heading reveal"><div><span class="eyebrow-dark">A PLACE TO LAND</span><h2>Make a little<br><i>room for life.</i></h2></div><div class="stay-tools"><p class="section-lede">Find a stay that feels right, from the neighbourhood to the monthly budget.</p><button class="filter-more" id="women-filter" type="button">◌ Women's safe stays <span class="toggle-knob"></span></button></div></div>
-      <div class="stay-grid" id="stay-grid"></div><div class="stays-foot"><span>DEMO LISTINGS · ALWAYS MEET AND VERIFY IN PERSON</span><a class="arrow-link" href="#stay-grid">Explore all stays <span>↗</span></a></div>
-    </section>
-    <section class="trust-section section-wrap" id="trust">
-      <div class="trust-top reveal"><div><span class="eyebrow-light">GOOD WORK SHOULD FEEL GOOD</span><h2>People first.<br><i>Always.</i></h2></div><p>Moving for work takes courage. We make every step more human, with honest listings, thoughtful community guidelines, and clear ways to raise a concern.</p></div>
-      <div class="trust-cards"><article class="trust-card reveal"><span class="trust-number">01</span><span class="trust-icon">◌</span><h3>Genuine opportunities</h3><p>Clear role details, pay expectations and a way to ask questions before you apply.</p><a href="#jobs">See how we list roles <b>↗</b></a></article><article class="trust-card reveal"><span class="trust-number">02</span><span class="trust-icon">⌂</span><h3>Respectful stays</h3><p>Useful details about facilities, location and the people who manage each stay.</p><a href="#stays">Explore places to land <b>↗</b></a></article><article class="trust-card reveal"><span class="trust-number">03</span><span class="trust-icon">♡</span><h3>A kinder community</h3><p>Simple tools to report concerns and help keep conversations welcoming.</p><a href="#footer" id="report-link">Our community promise <b>↗</b></a></article></div>
-      <div class="trust-foot"><span>YOUR NEXT CHAPTER DESERVES A GOOD START.</span><span>WE'RE HERE FOR THE WHOLE JOURNEY <b>✳</b></span></div>
-    </section>
-    <section class="grow-together section-wrap" id="grow-together"><div class="grow-copy"><span class="eyebrow-dark">GROW TOGETHER</span><h2>Your next step<br>is better <i>together.</i></h2><p>Connect, learn and get referrals from people like you. A good word can open a new door.</p><button class="button button-dark" id="meet-people-secondary" type="button">Join the community <span>↗</span></button><div class="grow-proof"><div class="avatar-stack"><span>R</span><span>A</span><span>S</span><span>+</span></div><span>Join 5,000+ people<br>building their journey</span></div></div><div class="grow-image"><img src="assets/worker-stories-triptych.jpg" alt="Workers sharing a moment together"><div class="grow-note">Real people.<br>Better tomorrows.</div></div></section>
-    <section class="closing-cta section-wrap reveal"><span class="closing-ornament">✳</span><span class="eyebrow-light">THE CITY IS FULL OF POSSIBILITY</span><h2>Your next chapter<br>is waiting <i>for you.</i></h2><a class="button button-light" href="#jobs">Let's find it together <span>↗</span></a><p class="hindi closing-hindi" lang="hi">नौकरी से नई शुरुआत तक।</p></section>
-  </main>
-  <footer class="site-footer section-wrap" id="footer">
-    <div class="footer-main"><div class="footer-brand"><a class="brand brand-footer" href="#top"><img class="brand-mark brand-mark-image" src="assets/nirup-nr-mark-small.png" alt=""><span class="brand-type"><strong>NIRUP MADADGAAR</strong><small lang="hi">निरुप मददगार</small></span></a><p>A little help finding work.<br>A lot of heart for the journey.</p><img class="footer-official-logo" src="assets/nirup-madadgaar-logo-web.png" alt="NIRUP MADADGAAR — निरुप मददगार, नौकरी से नई शुरुआत तक।" loading="lazy" decoding="async"><span class="footer-location">BENGALURU, INDIA · MADE WITH CARE</span></div>
-      <div class="footer-col"><span>FIND YOUR NEXT STEP</span><a href="#jobs">Find work</a><a href="#stories">Work stories</a><a href="#network">Meet the community</a><a href="#stays">Find a stay</a></div>
-      <div class="footer-col"><span>HERE TO HELP</span><button type="button" id="footer-report">Report a concern</button><button type="button" class="login-trigger">Sign in</button><button type="button" id="admin-trigger">Community dashboard</button><a href="#trust">Our promise</a></div>
-      <div class="footer-newsletter"><span>GOOD THINGS START WITH A HELLO</span><p>Occasional notes about work, people and places in your city.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button aria-label="Subscribe" type="submit">↗</button></form><small id="newsletter-feedback" aria-live="polite">No spam. Just useful things.</small></div>
+
+  <main id="top" class="app-layout">
+    <aside class="left-rail" aria-label="Main navigation">
+      <div class="rail-profile"><div class="profile-avatar avatar-blue">NM</div><div><strong>Welcome to your circle</strong><small>Bengaluru, India <span class="online-dot"></span></small></div></div>
+      <nav class="rail-nav">
+        <a class="active" href="#feed"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg>Home <span class="nav-count">01</span></a>
+        <a href="#stories"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Work Stories</a>
+        <a href="#jobs"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18m-11 0v2h4v-2"/></svg>Job Vacancies <span class="nav-count">8</span></a>
+        <a href="#community"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v1"/></svg>Worker Network</a>
+        <a href="#stays"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21H3zM9 21v-7h6v7"/></svg>PG &amp; Mess <span class="nav-count">06</span></a>
+      </nav>
+      <div class="rail-promo"><span class="promo-orbit">✦</span><span class="eyebrow">GOOD WORK, TOGETHER</span><h3>A little help goes a long way.</h3><p>Meet people who know your city and your kind of work.</p><button class="button button-light" id="meet-people-secondary" type="button">Meet your people <span>↗</span></button></div>
+      <div class="rail-footer"><a href="#footer">About</a><a href="#footer">Community</a><span>© 2026 NIRUP MADADGAAR</span></div>
+    </aside>
+
+    <div class="main-column">
+      <section class="welcome-banner reveal" aria-labelledby="welcome-title">
+        <div class="welcome-copy"><span class="welcome-kicker"><i></i> YOUR NEXT CHAPTER STARTS HERE</span><h1 id="welcome-title">Find your people.<br><span>Find your place.</span></h1><p>Real work, real stories, and a community ready to help you take the next step.</p><div class="welcome-actions"><a class="button button-white" href="#jobs">Explore opportunities <span>↗</span></a><span class="welcome-trust"><b class="verified-mark">✓</b> A community built on trust</span></div></div>
+        <div class="welcome-art" aria-hidden="true"><div class="art-halo"></div><img src="assets/hero-bengaluru-technician.jpg" alt=""><div class="floating-note"><span class="note-icon">✦</span><span><b>Good things grow together</b><small>Start with one connection</small></span></div><div class="banner-spark spark-one">✳</div><div class="banner-spark spark-two">✦</div></div>
+        <div class="banner-glow"></div>
+      </section>
+
+      <section class="feed-section" id="feed" aria-labelledby="feed-heading">
+        <div class="section-title-row"><div><span class="section-kicker">YOUR COMMUNITY, IN MOTION</span><h2 id="feed-heading">Your Feed <span class="live-dot"></span></h2></div><button class="button button-outline" type="button" id="create-post">＋ Create post</button></div>
+        <div class="feed-tabs" role="tablist" aria-label="Feed posts"><button class="feed-tab active" id="following-tab" type="button" role="tab" aria-selected="true" data-feed="following">Following <span class="tab-indicator"></span></button><button class="feed-tab" id="explore-tab" type="button" role="tab" aria-selected="false" data-feed="explore">Explore <span class="tab-indicator"></span></button><span class="feed-filter">✧ Demo feed</span></div>
+        <section class="stories-module" id="stories" aria-labelledby="stories-heading"><div class="mini-section-heading"><div><span class="section-kicker">SAMPLE STORIES FROM THE WORKDAY</span><h3 id="stories-heading">Work Stories</h3></div><a class="text-link" href="#story-cards">See all <span>↗</span></a></div><div class="story-rail" id="story-cards" aria-label="Sample work stories from Bengaluru"></div></section>
+        <div class="post-list" id="post-list" aria-live="polite">
+          <article class="post-card reveal" data-post="1" data-author="Ravi Kumar" data-topics="electrician iti safety peenya bengaluru trade">
+            <header class="post-head"><div class="post-avatar avatar-photo avatar-ravi">RK</div><div class="post-author"><strong>Ravi Kumar <span class="verified-badge" aria-label="Verified worker">✓</span></strong><small>Electrician · Peenya, Bengaluru <span>·</span> 2h</small></div><button class="more-button" type="button" aria-label="More post options">•••</button></header>
+            <p class="post-copy">Six months ago I was nervous about my first day on site. Today, my supervisor trusted me to walk a new teammate through the safety checks. <strong>Small steps do add up. 🔧</strong></p>
+            <div class="post-photo post-photo-work"><img src="assets/hero-bengaluru-technician.jpg" alt="A technician at work in a Bengaluru workshop"><span class="photo-caption"><span>✦</span> A GOOD DAY TO LEARN SOMETHING NEW</span></div>
+            <div class="skill-row"><span>ITI Electrician</span><span>Workplace safety</span><span>Mentorship</span></div>
+            <div class="post-feedback"><span><b>♥</b> <span data-like-count="1">38</span> people found this helpful</span><span>8 comments</span></div>
+            <footer class="post-actions"><button type="button" data-post-like="1"><span class="action-heart">♡</span> Like</button><button type="button" data-post-comment="1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-4-.98L3 21l1.7-4.5a8.4 8.4 0 0 1-1.2-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg> Comment</button><button type="button" data-post-share="1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg> Share</button></footer>
+            <div class="post-comments" id="comments-1" hidden><div class="comment-thread"><span class="comment-avatar">AP</span><p><b>Anjali</b> Needed to hear this today. Keep going! <small>1h · Reply</small></p></div><form class="comment-form" data-comment-form="1"><label class="sr-only" for="comment-input-1">Write a supportive comment</label><input id="comment-input-1" name="comment" placeholder="Write a thoughtful comment…" required><button type="submit" aria-label="Post comment">↗</button></form></div>
+          </article>
+
+          <article class="post-card reveal" data-post="2" data-author="Meena Rao" data-topics="customer care first job listening koramangala support explore">
+            <header class="post-head"><div class="post-avatar avatar-meena">MR</div><div class="post-author"><strong>Meena Rao <span class="verified-badge" aria-label="Verified worker">✓</span></strong><small>Customer Care Executive · Koramangala <span>·</span> 5h</small></div><button class="more-button" type="button" aria-label="More post options">•••</button></header>
+            <p class="post-copy">A year in customer support taught me that listening is a skill you can take anywhere. I wrote down three things I wish I knew on my first week. Maybe they can help someone starting out.</p>
+            <div class="advice-card"><span class="advice-quote">“</span><div><span class="section-kicker">A NOTE FOR YOUR FIRST WEEK</span><p>Ask questions. Take notes. Give yourself room to learn.</p><small>— Meena · Customer Care, Bengaluru</small></div><span class="advice-spark">✳</span></div>
+            <div class="skill-row"><span>Customer support</span><span>Communication</span><span>Career advice</span></div>
+            <div class="post-feedback"><span><b>♥</b> <span data-like-count="2">64</span> people found this helpful</span><span>12 comments</span></div>
+            <footer class="post-actions"><button type="button" data-post-like="2"><span class="action-heart">♡</span> Like</button><button type="button" data-post-comment="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-4-.98L3 21l1.7-4.5a8.4 8.4 0 0 1-1.2-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg> Comment</button><button type="button" data-post-share="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7"/></svg> Share</button></footer>
+            <div class="post-comments" id="comments-2" hidden><form class="comment-form" data-comment-form="2"><label class="sr-only" for="comment-input-2">Write a supportive comment</label><input id="comment-input-2" name="comment" placeholder="Write a thoughtful comment…" required><button type="submit" aria-label="Post comment">↗</button></form></div>
+          </article>
+        </div>
+        <button class="load-more" type="button" id="load-posts">Explore more from your community <span>↓</span></button>
+      </section>
+
+      <section class="jobs-section" id="jobs" aria-labelledby="jobs-heading">
+        <div class="jobs-panel-head"><div><span class="section-kicker">YOUR NEXT OPPORTUNITY</span><h2 id="jobs-heading">Job Vacancies <span class="verified-badge">✓</span></h2><p>Good work, shared by people who want you to succeed.</p></div><a class="button button-blue" href="#job-list" id="all-jobs-link">Explore all jobs <span>↗</span></a></div>
+        <div class="job-tools"><div class="filter-pills" role="group" aria-label="Filter by qualification"><button class="filter-pill active" data-education="All" type="button">All roles</button><button class="filter-pill" data-education="10th" type="button">10th</button><button class="filter-pill" data-education="12th" type="button">12th</button><button class="filter-pill" data-education="ITI" type="button">ITI</button><button class="filter-pill" data-education="Diploma" type="button">Diploma</button><button class="filter-pill" data-education="Graduate" type="button">Graduate</button></div><button class="filter-more" id="filter-toggle" type="button">＋ Filters</button></div>
+        <div class="filter-panel" id="filter-panel" hidden><label>Keywords<input id="skill-filter" type="search" placeholder="Title, company or skill"></label><label>City<select id="city-filter"><option value="">Any Bengaluru area</option><option>Whitefield</option><option>Electronic City</option><option>Indiranagar</option><option>Koramangala</option><option>Peenya</option><option>HSR Layout</option><option>Jayanagar</option><option>Malleshwaram</option></select></label><label>Experience<select id="experience-filter"><option value="">Any experience</option><option>Fresher</option><option>1–3 years</option><option>3+ years</option></select></label><label>Monthly salary<select id="salary-filter"><option value="">Any salary</option><option>₹15k+</option><option>₹20k+</option><option>₹30k+</option></select></label><label>Category<select id="category-filter"><option value="">Any category</option><option>Operations</option><option>Customer support</option><option>Skilled trades</option><option>Hospitality</option><option>Delivery &amp; logistics</option></select></label></div>
+        <div class="job-list" id="job-list"></div><div class="jobs-bottom"><span>LISTINGS ARE SAMPLE DEMO CONTENT</span><button id="show-more-jobs" class="underlined-button" type="button">Show more roles <span>↓</span></button></div>
+      </section>
+
+      <section class="stay-page" id="stays" aria-labelledby="stays-heading">
+        <div class="stay-page-hero"><div><span class="section-kicker">A PLACE TO LAND · BENGALURU</span><h2 id="stays-heading">Find your place<br><span>in the city.</span></h2><p>Explore demo PGs, rooms and everyday meals near work and transit.</p><span class="demo-ribbon">SAMPLE DEMO LISTINGS · NO REAL OWNERS OR CONTACT DETAILS</span></div><div class="stay-hero-icon" aria-hidden="true"><span>⌂</span><i></i><b>✦</b></div></div>
+        <div class="stay-type-tabs" role="tablist" aria-label="Accommodation type"><button class="stay-type-tab active" type="button" role="tab" aria-selected="true" data-stay-type="all">All stays <span>06</span></button><button class="stay-type-tab" type="button" role="tab" aria-selected="false" data-stay-type="pg">PG Listings</button><button class="stay-type-tab" type="button" role="tab" aria-selected="false" data-stay-type="room">Room Rentals</button><button class="stay-type-tab" type="button" role="tab" aria-selected="false" data-stay-type="mess">Mess Facilities</button></div>
+        <div class="stay-filter-panel" aria-label="Filter stays">
+          <label>LOCATION<select id="stay-filter-location"><option value="">All locations</option><option>Whitefield</option><option>Marathahalli</option><option>HSR Layout</option><option>Bellandur</option><option>BTM Layout</option><option>Koramangala</option></select></label>
+          <label>MONTHLY BUDGET<select id="stay-filter-budget"><option value="">Any budget</option><option value="5000">Up to ₹5,000</option><option value="10000">Up to ₹10,000</option><option value="15000">Up to ₹15,000</option><option value="20000">Up to ₹20,000</option></select></label>
+          <label>FOOD<select id="stay-filter-food"><option value="">Any food option</option><option value="included">Food included</option><option value="available">Food available</option><option value="none">No food service</option></select></label>
+          <label>ROOM SHARING<select id="stay-filter-sharing"><option value="">Any sharing type</option><option value="single">Single sharing</option><option value="double">Double sharing</option><option value="triple">Triple sharing</option></select></label>
+          <label>AMENITIES<select id="stay-filter-amenity"><option value="">Any amenity</option><option>Wi-Fi</option><option>Laundry</option><option>Security</option><option>Parking</option><option>Attached bathroom</option><option>Dining area</option><option>Home-style food</option></select></label>
+        </div>
+        <div class="stay-results-heading"><div><span class="section-kicker">THOUGHTFUL PLACES, CLEAR DETAILS</span><h3 id="stay-results-title">Places to stay and eat</h3></div><span class="results-count" id="stay-results-count" aria-live="polite">6 demo listings</span></div>
+        <div class="stay-listing-grid" id="stay-listings" aria-live="polite"></div>
+        <p class="stay-safety-note"><span>✓</span> Demo listings use sample prices and locations. No owner is contacted. Always visit a property, verify details, and agree terms before paying.</p>
+      </section>
+
+      <section class="community-strip" id="community"><div class="community-icon">✦</div><div><span class="section-kicker">BETTER TOGETHER</span><h2>Your next step is better with people.</h2><p>Ask a question, share what you know, or make a connection that helps someone feel at home.</p></div><button class="button button-blue" id="meet-people" type="button">Meet the community <span>↗</span></button></section>
+      <footer class="page-footer" id="footer"><a class="footer-brand" href="#top">NIRUP <b>MADADGAAR</b></a><span>Find Your Job. Find Your Place.</span><span>© 2026 NIRUP MADADGAAR</span><button type="button" class="footer-top">Back to top ↑</button></footer>
     </div>
-    <div class="footer-bottom"><span>© 2026 NIRUP MADADGAAR · PORTFOLIO DEMO</span><span>YOUR DETAILS STAY YOURS <b>♡</b></span><button type="button" class="footer-top">BACK TO THE BEGINNING ↑</button></div>
-  </footer>
+
+    <aside class="right-rail" aria-label="Your opportunities">
+      <section class="profile-card"><div class="profile-card-cover"></div><div class="profile-card-body"><div class="profile-avatar avatar-blue">NM</div><span class="profile-status"><i></i> YOUR JOURNEY STARTS HERE</span><h2>Good people.<br>Good opportunities.</h2><p>Build a profile, find your kind of work, and get to know your city.</p><button class="button button-blue signup-trigger" type="button">Create your free profile <span>↗</span></button><div class="profile-card-meta"><span>✦ Built around real people</span><span>✓ Community first</span></div></div></section>
+      <section class="quick-jobs-card"><div class="quick-jobs-head"><div><span class="section-kicker">HIRING NEAR YOU</span><h3>Fresh opportunities</h3></div><span class="jobs-pulse">08</span></div><div class="quick-job-item"><span class="quick-company q-company-blue">E</span><div><b>Store Operations Associate</b><small>Everyday Market · Whitefield</small></div><span class="mini-verified">✓</span></div><div class="quick-job-item"><span class="quick-company q-company-green">G</span><div><b>Junior Electrician</b><small>GoodGrid Works · Electronic City</small></div><span class="mini-verified">✓</span></div><div class="quick-job-item"><span class="quick-company q-company-pink">B</span><div><b>Customer Care Executive</b><small>BrightPath · Koramangala</small></div><span class="mini-verified">✓</span></div><a href="#jobs" class="quick-job-link">View vacancies <span>↗</span></a></section>
+      <section class="right-note"><span class="note-stars">✦</span><span class="section-kicker">A PLACE TO LAND</span><h3>Work is one part of the journey.</h3><p>Explore sample stays and meal plans around Bengaluru.</p><a href="#stays">Explore PG &amp; Mess <span>↗</span></a></section>
+      <div class="right-footnote">A KINDER WAY TO FIND WORK<br><span>MADE WITH CARE IN INDIA</span></div>
+    </aside>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation"><a class="active" href="#feed"><span>⌂</span>Home</a><a href="#stories"><span>◎</span>Stories</a><a href="#jobs"><span>▣</span>Jobs</a><a href="#stays"><span>⌂</span>Stays</a><a href="#community"><span>♧</span>People</a><button class="signup-trigger" type="button"><span>＋</span>Join</button></nav>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close dialog" type="button">×</button><div id="modal-content"></div></section></div>
   <script src="app.js"></script>
 </body>
 </html>
-
-\n

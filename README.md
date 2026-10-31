@@ -1,31 +1,33 @@
 # NIRUP MADADGAAR
 
-A responsive, motion-led job discovery and community homepage for Bengaluru. Built with plain HTML, CSS and JavaScript so it runs without a package install or build step.
+**Find Your Job. Find Your Place.**
 
-## Run and preview
+A responsive, desktop-first job discovery and worker community website. It includes a blue-gradient feed, work stories, sample social posts, a dark job vacancies preview, and an active PG, room rental and mess listings section. It uses the existing dependency-free HTML, CSS and JavaScript project structure.
 
-Open `index.html` in a modern browser, or run `npm run build` to create the Vercel-ready `dist/` output. The page requests Google Fonts, so an internet connection is needed for the selected fonts; system fallbacks are included. The original generated photography is stored in `assets/` and works locally.
+## Run locally
 
-## Deploy to Vercel
+You need Node.js 18 or newer. No package installation is required.
 
-Import the repository in Vercel using the repository root as the project root. `vercel.json` selects `npm run build` and the `dist/` output directory. No environment variables or backend services are required for this demo. Node.js 18 or newer is used by the dependency-free build script.
+1. Open the project folder in a terminal.
+2. Run `npm run build` to create the Vercel-ready `dist/` folder.
+3. Open `index.html` directly in a browser, or serve the folder with any local static web server.
+
+The page loads its display fonts from Google Fonts when internet access is available and falls back to system fonts. Brand artwork and sample photography are stored in `assets/`.
 
 ## Demo interactions
 
-- Search sample Bengaluru jobs by category, location, qualification, skills, experience and salary.
-- Open role details, save roles, and mark interest locally.
-- Read, like and comment on illustrated sample story previews; follow sample worker profiles and record demo referral requests.
-- Filter sample accommodation to women-only stays and preview an enquiry.
-- Use demo signup/login, messages, reports, newsletter and admin dashboard interactions.
+- Switch between Following and Explore feeds.
+- Follow workers, like and comment on posts, share a post, and create a local demo post.
+- Browse work stories and sample job details.
+- Filter vacancies by qualification, keyword, city, experience, salary and job category.
+- Save sample jobs in this browser.
+- Browse PGs, room rentals and mess plans; filter by location, budget, food, sharing and amenities.
+- Preview a stay or meal enquiry without sending it to an owner.
 
-No accounts, messages, applications, reports, subscriptions or enquiries are sent to a server. Sample listings and profiles are fictional. Do not enter real passwords or sensitive identity information.
+Interactions are stored locally in the browser. There is no account system, backend, real application submission, live listing verification or owner contact information in this phase. Job, worker and stay details are fictional portfolio demo content. Do not enter real passwords or sensitive identity information.
 
-## Design and assets
+## Build and deployment
 
-The homepage follows the approved first visual concept: a warm-ivory editorial layout with deep navy, muted teal and subtle gold, floating opportunity cards, photographic story and accommodation cards, and a responsive mobile composition. The supplied NR logo artwork is preserved in `assets/nirup-madadgaar-logo-original.png`; the navbar uses a crop of the NR mark, the footer uses a resized web copy, and `assets/nirup-favicon.svg` is a simplified monogram favicon. The supplied homepage reference is kept in `assets/approved-homepage-reference.png`. Hero, story and accommodation photography are generated for this project; optimized JPEGs are used in the page while the original PNGs are retained.
+Run `npm run build` to copy the site and referenced assets into `dist/`. `vercel.json` points Vercel to this output. The current project does not require paid APIs, environment variables or a domain purchase.
 
-English display typography uses Plus Jakarta Sans and DM Sans. Hindi uses Tiro Devanagari Hindi, Mukta and Noto Sans Devanagari. These fonts load from Google Fonts when online; the project includes system fallbacks and no local font files. No private font credentials or font service keys are required.
-
-## Future expansion
-
-The prototype can later move to Next.js/React with TypeScript and Supabase when a real backend and authentication flow are ready. Keep future secrets in server-side environment variables; none are needed for this demo.
+Supabase, authentication and live data are later development stages; no backend service is connected yet.
